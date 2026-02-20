@@ -15,6 +15,7 @@ class TodoTask(models.Model):
         ('in_progress', 'IN Progress'),
         ('completed', 'Completed')
     ], string='Status', default='new')
+    partner_id = fields.Many2one('res.partner', string='Partner')
 
 
 
